@@ -8,4 +8,4 @@ RUN chmod +x /start.sh
 
 EXPOSE 80
 
-CMD ["/wait-for-it.sh", "app:8000", "--", "nginx", "-g", "daemon off;"]
+CMD ["/wait-for-it.sh", "app:8000", "--", "./start.sh"]
