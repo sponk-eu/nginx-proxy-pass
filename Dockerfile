@@ -8,4 +8,4 @@ RUN chmod +x /start.sh
 
 EXPOSE 80
 
-CMD ["/wait-for-it.sh", "$TARGET_SERVER", "--", "/start.sh"]
+CMD ["sh", "-c", "/wait-for-it.sh $TARGET_SERVER -- /start.sh"]
