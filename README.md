@@ -10,7 +10,8 @@ services:
   nginx-proxy-pass:
     image: sponk/nginx-proxy-pass
     environment:
-      TARGET_SERVER: app:8000\/api\/
+      TARGET_SERVER_ENDPOINT: app:8000\/api\/
+      TARGET_SERVER: app:8000
     stdin_open: true
     tty: true
     links:
