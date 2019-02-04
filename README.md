@@ -20,3 +20,8 @@ services:
     labels:
       io.rancher.container.pull_image: always
 ```
+
+
+```
+docker run -e TARGET_SERVER_ENDPOINT='http://app:8000\/api\/' -e TARGET_SERVER='app:8000' -e PROXY_SSL_VERIFY='off' --name nginx-proxy-pass sponk/nginx-proxy-pass
+```
