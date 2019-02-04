@@ -12,6 +12,7 @@ services:
     environment:
       TARGET_SERVER_ENDPOINT: app:8000\/api\/
       TARGET_SERVER: app:8000
+      PROXY_SSL_VERIFY: off
     stdin_open: true
     tty: true
     links:
